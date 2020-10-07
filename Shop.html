@@ -6,8 +6,9 @@
 </head>
 
 <body>
-    <h1>Artur's Smartphone Shop</h1>
-        <table style="width:100%">
+    <h1 id ="Title" onmouseover="addClassToTitle()" onmouseout="removeClassFromTitle()">Artur's Smartphone Shop</h1>
+    <button onclick="toggleShowImages()">Click</button>
+        <table id="Table" style="width:100%">
             <tr>
                 <th>Image</th>
                 <th>Name</th> 
@@ -48,11 +49,36 @@
     <h2>Where to find my Shop</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10666.758477249405!2d8.549439104828283!3d48.05833032285498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790978c3eda7875%3A0x8d2fd4234f56884e!2sWaldfriedhof%20Schwenningen!5e0!3m2!1sde!2sde!4v1601999945695!5m2!1sde!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     
-    <h3>Review Shop</h3>
+    <h2>Review Shop</h2>
         <textarea id="ShopReview" name="ShopReview" rows="4" cols="50">
         </textarea>
-        <input type="submit" value="Submit">
-    <script src="myscripts.js"></script> 
+        <button type="button">Submit!</button>
+    
+    <h2 id="listTitle">Todo List</h2>
+
+        <ul id="firstList">
+            <li><p>1st</p></li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+
+        <ul id="secondList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+
+        <div>
+            <p>This text is just for the exercise</p>
+            <button type="button" onclick="changePContent()">Click Me!</button>
+        </div>
+        <input type="text" placeholder="new title" id="newTitle" />
+        <button type="button" onclick="changeListTitle()">Change Title</button>
+        <input type="text" placeholder="new List Item" id="newli2" />
+        <button type="button" onclick="addToTheSecond()">Add To List 2</button>
+        <button type="button" onclick="firstUlDisappear()">Remove First List</button>
+        <button type="button" onclick="paintItGreen()">Paint It Green</button>
+    <script src="Script.js"></script> 
 </body>
 <footer>
     <address>
